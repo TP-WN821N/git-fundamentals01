@@ -8,7 +8,151 @@
    <link rel="stylesheet" href="style.css">
    <!-- Boxicons CSS -->
    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-   <title>Document</title>
+   <title>Trickerboy Abdullajon</title>
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: 'Poppins', sans-serif;
+      }
+
+      body {
+         height: 100vh;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background-color: #f4f4f4;
+      }
+
+      .profile-card {
+         max-width: 370px;
+         width: 100%;
+         background: #fff;
+         border-radius: 24px;
+         padding: 25px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         box-shadow: 0 5px 10px rjba(0, 0, 0, 0.1);
+         position: relative;
+      }
+
+      .profile-card::before {
+         top: 0;
+         left: 0;
+         border-radius: 24px 24px 0 0;
+         content: '';
+         position: absolute;
+         height: 36%;
+         width: 100%;
+         background-color: #4070f4;
+      }
+
+      .image {
+         position: relative;
+         height: 150px;
+         width: 150px;
+         border-radius: 50%;
+         background-color: #4070f4;
+         padding: 3px;
+         margin-bottom: 10px;
+
+      }
+
+      .image .profile-img {
+         height: 100%;
+         width: 100%;
+         border-radius: 50%;
+         border: 3px solid #fff;
+
+      }
+
+      .profile-card .data-text {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         color: #333;
+      }
+
+      .data-text .name {
+         font-size: 22px;
+         font-weight: 500;
+      }
+
+      .data-text .job {
+         font-size: 15px;
+         font-weight: 400;
+      }
+
+      .profile-card .media-buttons {
+         display: flex;
+         align-items: center;
+         margin-top: 15px;
+      }
+
+      .media-buttons .link {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         color: #fff;
+         font-size: 18px;
+         text-decoration: none;
+         margin: 0 8px;
+         height: 34px;
+         width: 34px;
+         border-radius: 50%;
+         background-color: #4070f4;
+      }
+
+      .profile-card .buttons {
+         display: flex;
+         align-items: center;
+         margin-top: 25px;
+      }
+
+      .buttons .button {
+         border: none;
+         color: #fff;
+         font-size: 14px;
+         font-weight: 400;
+         border-radius: 24px;
+         padding: 8px 24px;
+         margin: 0 10px;
+         background-color: #4070f4;
+         cursor: pointer;
+         transition: all 0.3s ease;
+      }
+
+      .buttons .button:hover {
+         background-color: #0e4bf1;
+      }
+
+      .profile-card .analytics {
+         display: flex;
+         align-items: center;
+         margin-top: 25px;
+      }
+
+      .analytics .data {
+         display: flex;
+         align-items: center;
+         color: #333;
+         padding: 0 20px;
+         border-right: 2px solid #e7e7e7;
+      }
+
+      .data i {
+         font-size: 18px;
+         margin-right: 6px;
+      }
+
+      .data:last-child {
+         border-right: none;
+      }
+   </style>
 </head>
 
 <body>
@@ -16,7 +160,7 @@
       <div class="image">
          <img src="rasm2.jpg" alt="Abdullajon rasmi" class="profile-img">
       </div>
-      
+
 
       <div class="data-text">
          <span class="name">TrickerboyA</span>
@@ -28,13 +172,13 @@
             <i class='bx bxl-facebook'></i>
          </a>
          <a href="#" style="background: #1da1f2;" class="link">
-            <i class='bx bxl-twitter' ></i>
+            <i class='bx bxl-twitter'></i>
          </a>
          <a href="#" style="background: #e1306c;" class="link">
-            <i class='bx bxl-instagram' ></i>
+            <i class='bx bxl-instagram'></i>
          </a>
          <a href="#" style="background: #ff0000;" class="link">
-            <i class='bx bxl-youtube' ></i>
+            <i class='bx bxl-youtube'></i>
          </a>
       </div>
 
@@ -49,11 +193,11 @@
             <span class="number">60k</span>
          </div>
          <div class="data">
-            <i class='bx bx-message-rounded' ></i>
+            <i class='bx bx-message-rounded'></i>
             <span class="number">40k</span>
          </div>
          <div class="data">
-            <i class='bx bx-share' ></i>
+            <i class='bx bx-share'></i>
             <span class="number">20k</span>
          </div>
       </div>
